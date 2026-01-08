@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build main.go -o hello
+RUN go build -o hello main.go
 
 FROM alpine:latest
 WORKDIR /root/
